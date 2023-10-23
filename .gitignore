@@ -1,2 +1,4 @@
 .idea
 **/*.o
+src/sim_cache
+**/*.result.txt

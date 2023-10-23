@@ -5,10 +5,10 @@ WARN = -Wall
 CFLAGS = $(OPT) $(WARN) $(INC) $(LIB)
 
 # List all your .cc files here (source files, excluding header files)
-SIM_SRC = main.cc world.cc
+SIM_SRC = main.cc cache.cc
 
 # List corresponding compiled object files here (.o files)
-SIM_OBJ = main.o world.o
+SIM_OBJ = main.o cache.o
  
 #################################
 
@@ -35,6 +35,7 @@ sim_cache: $(SIM_OBJ)
 
 clean:
 	rm -f *.o sim_cache
+	rm -f *.result.txt
 
 
 # type "make clobber" to remove all .o files (leaves sim_cache binary)

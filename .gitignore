@@ -2,3 +2,4 @@
 **/*.o
 src/sim_cache
 **/*.result.txt
+**/*.png
